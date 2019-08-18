@@ -1,0 +1,12 @@
+
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":1001,\"descripcion\":\"Tasa Hulk\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":1002,\"descripcion\":\"Remera Hulk\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":1003,\"descripcion\":\"Campera Hulk\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":2001,\"descripcion\":\"Tasa BATMAN\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":2002,\"descripcion\":\"Remera BATMAN\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{ \"codProducto\":2003,\"descripcion\":\"Campera BATMAN\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+
+curl -X PUT "localhost:8080/api/v1/productos/7" -H "Content-type: application/json" -d "{ \"codProducto\":2001,\"descripcion\":\"Tasa BATMAN\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
+curl -X DELETE "localhost:8080/api/v1/productos/1" -H "Content-type: application/json" 
+curl -X GET "localhost:8080/api/v1/productos/1" -H "Content-type: application/json" 
+curl -X POST "localhost:8080/api/v1/productos/" -H "Content-type: application/json" -d "{\"codProducto\":3005,\"descripcion\":\"producto nuevo\", \"tipoSuperheroe\": {\"id\":1, \"nombre\": \"MARVEL\"}, \"costo\": 10.20}"
