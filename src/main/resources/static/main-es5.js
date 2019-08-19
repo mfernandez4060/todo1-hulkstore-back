@@ -107,7 +107,7 @@ module.exports = "<div class=\"row text-center animated fadeIn m-5\">\r\n    <di
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\r\n    aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <a class=\"navbar-brand\" href=\"#\">\r\n    <img src=\"assets/img/todo1.jpg\" width=\"130\" height=\"60\" alt=\"\"> Hulk Store</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarText\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['home']\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li *ngIf=\"isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['inventario']\">Inventario</a>\r\n      </li>\r\n      <li *ngIf=\"isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['kardex']\">Kardex</a>\r\n      </li>\r\n      <li *ngIf=\"isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['compras']\">Compras de Productos</a>\r\n      </li>\r\n      <li *ngIf=\"isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['ventas']\">Ventas de Productos</a>\r\n      </li>\r\n    </ul>\r\n\r\n    <span class=\"navbar-text\">\r\n      <button *ngIf=\"!isAuthenticated()\" (click)=\"login()\" type=\"button\" class=\"btn btn-outline-primary\">Login</button>\r\n    </span>\r\n\r\n    <span class=\"navbar-text\">\r\n      <button *ngIf=\"isAuthenticated()\" (click)=\"logout()\" type=\"button\" class=\"btn btn-outline-primary\">Logout</button>\r\n    </span>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\"\r\n    aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <a class=\"navbar-brand\" href=\"#\">\r\n    <img src=\"assets/img/todo1.jpg\" width=\"130\" height=\"60\" alt=\"\"> Hulk Store</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarText\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['home']\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li *ngIf=\"!isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['inventario']\">Inventario</a>\r\n      </li>\r\n      <li *ngIf=\"!isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['kardex']\">Kardex</a>\r\n      </li>\r\n      <li *ngIf=\"!isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['compras']\">Compras de Productos</a>\r\n      </li>\r\n      <li *ngIf=\"!isAuthenticated()\" class=\"nav-item\" routerLinkActive=\"active\">\r\n        <a class=\"nav-link\" [routerLink]=\"['ventas']\">Ventas de Productos</a>\r\n      </li>\r\n    </ul>\r\n<!--\r\n    <span class=\"navbar-text\">\r\n      <button *ngIf=\"!isAuthenticated()\" (click)=\"login()\" type=\"button\" class=\"btn btn-outline-primary\">Login</button>\r\n    </span>\r\n\r\n    <span class=\"navbar-text\">\r\n      <button *ngIf=\"isAuthenticated()\" (click)=\"logout()\" type=\"button\" class=\"btn btn-outline-primary\">Logout</button>\r\n    </span>\r\n  -->\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -258,12 +258,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
 /* harmony import */ var _components_callback_callback_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/callback/callback.component */ "./src/app/components/callback/callback.component.ts");
-/* harmony import */ var _services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/auth-guard.service */ "./src/app/services/auth-guard.service.ts");
-/* harmony import */ var _components_inventario_inventario_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/inventario/inventario.component */ "./src/app/components/inventario/inventario.component.ts");
-/* harmony import */ var _components_kardex_kardex_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/kardex/kardex.component */ "./src/app/components/kardex/kardex.component.ts");
-/* harmony import */ var _components_compras_compras_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/compras/compras.component */ "./src/app/components/compras/compras.component.ts");
-/* harmony import */ var _components_ventas_ventas_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/ventas/ventas.component */ "./src/app/components/ventas/ventas.component.ts");
-
+/* harmony import */ var _components_inventario_inventario_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/inventario/inventario.component */ "./src/app/components/inventario/inventario.component.ts");
+/* harmony import */ var _components_kardex_kardex_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/kardex/kardex.component */ "./src/app/components/kardex/kardex.component.ts");
+/* harmony import */ var _components_compras_compras_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/compras/compras.component */ "./src/app/components/compras/compras.component.ts");
+/* harmony import */ var _components_ventas_ventas_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/ventas/ventas.component */ "./src/app/components/ventas/ventas.component.ts");
 
 
 
@@ -276,27 +274,27 @@ var APP_ROUTES = [
     { path: 'home', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"] },
     {
         path: 'inventario',
-        component: _components_inventario_inventario_component__WEBPACK_IMPORTED_MODULE_4__["InventarioComponent"],
-        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]]
+        component: _components_inventario_inventario_component__WEBPACK_IMPORTED_MODULE_3__["InventarioComponent"]
+        //,canActivate: [AuthGuardService]
     },
     {
         path: 'kardex',
-        component: _components_kardex_kardex_component__WEBPACK_IMPORTED_MODULE_5__["KardexComponent"],
-        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]]
+        component: _components_kardex_kardex_component__WEBPACK_IMPORTED_MODULE_4__["KardexComponent"]
+        //, canActivate: [AuthGuardService]
     },
     {
         path: 'compras',
-        component: _components_compras_compras_component__WEBPACK_IMPORTED_MODULE_6__["ComprasComponent"],
-        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]]
+        component: _components_compras_compras_component__WEBPACK_IMPORTED_MODULE_5__["ComprasComponent"]
+        //, canActivate: [AuthGuardService]
     },
     {
         path: 'ventas',
-        component: _components_ventas_ventas_component__WEBPACK_IMPORTED_MODULE_7__["VentasComponent"],
-        canActivate: [_services_auth_guard_service__WEBPACK_IMPORTED_MODULE_3__["AuthGuardService"]]
+        component: _components_ventas_ventas_component__WEBPACK_IMPORTED_MODULE_6__["VentasComponent"]
+        //, canActivate: [AuthGuardService]
     },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
-var APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES, { useHash: false });
+var APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES);
 var FeatureRoutingModule = /** @class */ (function () {
     function FeatureRoutingModule() {
     }
