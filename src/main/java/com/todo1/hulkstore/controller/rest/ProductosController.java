@@ -133,7 +133,7 @@ public class ProductosController {
 		Producto producto = new Producto();
 		producto.setCodProducto(productoDto.getCodProducto());
 		producto.setCosto(productoDto.getCosto());
-		producto.setDescripcion(producto.getDescripcion());
+		producto.setDescripcion(productoDto.getDescripcion());
 		producto.setTipoSuperheroe(tipoSuperheroe);
 		
 		Producto newProducto = productoService.save(producto);
