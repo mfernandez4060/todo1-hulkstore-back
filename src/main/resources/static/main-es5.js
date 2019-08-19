@@ -296,7 +296,7 @@ var APP_ROUTES = [
     },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
-var APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES);
+var APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES, { useHash: false });
 var FeatureRoutingModule = /** @class */ (function () {
     function FeatureRoutingModule() {
     }

@@ -292,7 +292,7 @@ const APP_ROUTES = [
     },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
-const APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES);
+const APP_ROUTING = _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forRoot(APP_ROUTES, { useHash: false });
 class FeatureRoutingModule {
 }
 
